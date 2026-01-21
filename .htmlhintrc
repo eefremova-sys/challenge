@@ -1,0 +1,7 @@
+{
+  "tagname-lowercase": true,
+  "attr-lowercase": true,
+  "attr-value-not-empty": true,
+  "doctype-html5": true,
+  "spec-char-escape": true
+}

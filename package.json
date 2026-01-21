@@ -1,0 +1,32 @@
+{
+  "name": "lab2",
+  "version": "1.0.0",
+  "description": "mkdocs custom theme",
+  "author": "Elizaveta Efremova",
+  "license": "ISC",
+
+  "scripts": {
+    "dev": "mkdocs serve",
+
+    "build:html": "html-minifier-terser --input-dir site --output-dir site --file-ext html --collapse-whitespace --remove-comments",
+    "build:css": "postcss theme/styles.css --use autoprefixer --use cssnano --no-map --output site/style.css",
+    "validate:html": "html-validate site --ext html --max-warnings=0",
+
+    "build": "mkdocs build && npm run build:html && npm run build:css && npm run validate:html",
+
+    "preview": "serve site"
+  },
+
+  "dependencies": {
+    "serve": "^14.2.5"
+  },
+
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^6.0.1",
+    "html-minifier-terser": "^7.2.0",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "html-validate": "^8.3.0"
+  }
+}

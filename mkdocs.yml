@@ -1,0 +1,14 @@
+site_name: lizo4k0 - Elizaveta Efremova 
+site_author: Elizaveta Efremova 
+
+theme:
+  name: null
+  custom_dir: theme
+
+extra:
+  year: 2025
+
+nav:
+  - Главная: index.md
+  - О проекте: about.md
+  - Результаты: results.md
