@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 env:
-  DOCKER_IMAGE: llizzkh/lab2-mkdocs
+  DOCKER_IMAGE: liz04k0/lab2
   DOCKER_TAG: latest
 
 jobs:
@@ -55,7 +55,7 @@ jobs:
           version: '3.8'
           services:
             web:
-              image: llizzkh/lab2-mkdocs:latest
+              image: liz04k0/lab2:latest
               ports:
                 - "80:80"
           EOF
